@@ -46,9 +46,6 @@ body {
   max-width: 1920px;
   background-color: #111111;
   outline: 1px solid red;
-  background-image: url(../img/chart.png);
-  background-repeat: no-repeat;
-  background-position: 0 875px;
 }
 
 
@@ -77,6 +74,9 @@ p {
 }
 
 .content {
+  background-image: url(../img/chart.png);
+  background-repeat: no-repeat;
+  background-position: 0 800px;
   margin-bottom: 120px;
 }
 
