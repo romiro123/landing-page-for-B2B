@@ -74,9 +74,11 @@ p {
 }
 
 .content {
+  /*
   background-image: url(../img/chart.png);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0 800px;
+  background-position: 0 800px;*/
   margin-bottom: 120px;
 }
 
@@ -91,7 +93,9 @@ p {
   display: block;
 }
 
-.header__logo {}
+.header__logo {
+  text-align: left;
+}
 
 .logo-img {
   width: 132px;
@@ -151,12 +155,37 @@ p {
   margin-right: 24px;
 }
 
+.advantage__item--box {
+  background-image: url(../img/box.png);
+  background-repeat: no-repeat;
+  background-position: 115px 75px;
+}
+
+.advantage__item--camera {
+  background-image: url(../img/camera.png);
+  background-repeat: no-repeat;
+  background-position: 83px 64px;
+}
+
+.advantage__item--diamond {
+  background-image: url(../img/diamond.png);
+  background-repeat: no-repeat;
+  background-position: 72px 105px;
+}
+
+.advantage__item--car {
+  background-image: url(../img/car.png);
+  background-repeat: no-repeat;
+  background-position: 108px 65px;
+}
+
 .uppercase {
   font-weight: 600;
   font-size: 13px;
   line-height: 17px;
   letter-spacing: -0.02em;
   color: #FAFAFA;
+  margin: 0;
 }
 
 .uppercase__advantage {
@@ -185,7 +214,7 @@ p {
 
 .statistics__subtitle {
   width: 450px;
-  margin-bottom: 160px;
+
 }
 
 .subtitle {
@@ -198,10 +227,12 @@ p {
 
 .statistics__list {
   display: flex;
+  height: 190px;
 }
 
 .statistics__item {
   outline: 1px solid red;
+  margin-top: auto;
   width: 192px;
   padding-left: 20px;
 }
@@ -383,6 +414,11 @@ p {
 }
 
 .ui-accordion-content {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  opacity: 0.8;
   padding-bottom: 24px;
 }
 
@@ -436,8 +472,9 @@ p {
 /*-----footer-----*/
 
 .footer {
+  border-top: 1px solid #323131;
   text-align: center;
-  padding: 0 395px 40px;
+  padding: 40px 395px;
 }
 
 .footer__logo {
@@ -493,4 +530,47 @@ p {
   letter-spacing: -0.25px;
   color: #ADACAC;
   opacity: 0.5;
+}
+
+@media (max-width: 639px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .header {
+    padding: 27px 16px 27px;
+  }
+
+  .advantage {
+    padding: 94px 0 0 0;
+  }
+
+  .advantage__title {
+    margin-bottom: 32px;
+  }
+
+  .title__big {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 33px;
+    letter-spacing: -1px;
+  }
+
+  .advantage__list {
+    flex-direction: column;
+  }
+
+  .advantage__item {
+    width: 288px;
+  }
+
+  .advantage__item:not(:last-child) {
+    margin: 0 0 16px 0;
+  }
+
+  .advantage__item--box {}
+}
+
+.ellipse {
+  display: none;
 }
