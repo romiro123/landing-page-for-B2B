@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
-*/
-
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -68,7 +61,9 @@ ul {
   margin: 0;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   margin: 0;
   color: #FAFAFA;
 }
@@ -93,6 +88,7 @@ main {
 .container {
   margin: 0 0 120px 0;
 }
+
 
 /*-----header-----*/
 
@@ -127,8 +123,6 @@ main {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
 }
-
-
 
 .title__big {
   font-weight: bold;
@@ -214,6 +208,7 @@ main {
   letter-spacing: -0.5px;
 }
 
+
 /*-----statistics-----*/
 
 .statistics {
@@ -223,6 +218,7 @@ main {
   background-position: center 2px;
   height: 600px;
   margin-bottom: 55px;
+  position: relative;
 }
 
 .statistics__contant {
@@ -297,11 +293,23 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 115px;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  position: absolute;
+  height: 210px;
+  top: 265px;
+  left: 0;
 }
 
 .statistics__item {
   margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   width: 192px;
   padding-left: 20px;
 }
@@ -319,6 +327,7 @@ main {
 .green {
   color: #50CE61;
 }
+
 
 /*------seller------*/
 
@@ -341,8 +350,6 @@ main {
   letter-spacing: -1px;
   margin-bottom: 32px;
 }
-
-
 
 .seller__list {
   display: -webkit-box;
@@ -454,6 +461,7 @@ main {
   outline: 1px solid #FAFAFA;
 }
 
+
 /*-----faq-----*/
 
 .faq__title {
@@ -540,7 +548,8 @@ main {
   text-align: left;
 }
 
-.ui-accordion-content, .ui-accordion-content-active {
+.ui-accordion-content,
+.ui-accordion-content-active {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
@@ -548,6 +557,7 @@ main {
   opacity: 0.8;
   padding-bottom: 24px;
 }
+
 
 /*-----footer-----*/
 
@@ -592,7 +602,8 @@ main {
   color: #FAFAFA;
 }
 
-.nav__link:hover, .nav__link:focus {
+.nav__link:hover,
+.nav__link:focus {
   outline: 2px solid #DE2323;
   outline-offset: 10px;
 }
@@ -626,7 +637,8 @@ main {
 
 .link-bot {}
 
-.link-bot:hover, .link-bot:focus {
+.link-bot:hover,
+.link-bot:focus {
   color: #DE2323;
   outline: none;
   -webkit-transition: 0.5s;
@@ -638,15 +650,14 @@ main {
   text-decoration: underline;
 }
 
-.link-instagram:hover, .link-instagram:focus {
+.link-instagram:hover,
+.link-instagram:focus {
   color: #DE2323;
   outline: none;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-
-
 
 .folow__item--copirate {
   font-weight: normal;
@@ -660,139 +671,114 @@ main {
   .header {
     padding: 28px 32px 26px;
   }
-
   .content {
     padding: 0 32px;
   }
-
   .advantage {
     padding-top: 95px;
     margin-bottom: 80px;
   }
-
   .advantage__title {
     max-width: 700px;
     margin-bottom: 48px;
   }
-
   .title__big {
     font-size: 50px;
     line-height: 55px;
   }
-
   .advantage__list {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-
   .advantage__item {
     max-width: 49%;
     height: 260px;
     padding: 16px 16px 24px;
   }
-
   .advantage__item--box {
     background-position: 92% 25px;
     margin: 0 17px 24px 0;
   }
-
   .advantage__item--camera {
     background-position: 93% 20px;
     margin: 0 0 0 0;
   }
-
   .advantage__item--diamond {
     background-position: 92% 23px;
     margin: 0 17px 0 0;
   }
-
   .advantage__item--car {
     background-position: 95% 15px;
     margin: 0 0 0 0;
   }
-
   .statistics {
     margin-bottom: 80px;
   }
-
   .test {
     margin: 0 0 75px;
   }
-
   .statistics__title {
     max-width: 555px;
     margin-bottom: 30px;
   }
-
+  .statistics__list {
+    top: 270px;
+    left: 15px;
+  }
   .ellipse {
     width: 280px;
     height: 280px;
   }
-
   .percent {
     font-size: 83px;
     margin-top: 0;
     line-height: 90%;
   }
-
   .seller {
     background-size: 315px;
     background-position: 685px -5px;
     margin-bottom: 115px;
   }
-
   .seller__title {
     margin-bottom: 30px;
   }
-
-
-
   .seller__subtitle {
     max-width: 490px;
     font-size: 23px;
     line-height: 32px;
     letter-spacing: -0.5px;
   }
-
   .faq__title {
     max-width: 520px;
     font-size: 57px;
     line-height: 73px;
     letter-spacing: -1.75px;
   }
-
   .subtitle {
     text-align: left;
   }
-
   .footer {
     padding: 40px 60px;
   }
-
   .footer__logo {
     margin-bottom: 25px;
   }
-
   .folow {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
-
   .footer__subtitle {
     text-align: center;
     margin: 0px auto 48px auto;
   }
-
   .folow__item--bot {
     margin: 0 0 15px 0;
   }
-
   .folow__item--inst {
     margin: 0 0 60px 0;
   }
-
   .folow__item--copirate {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
@@ -804,41 +790,33 @@ main {
   .content {
     padding: 0 24px;
   }
-
   .advantage {
     padding-top: 90px;
     margin-bottom: 17px;
   }
-
   .advantage__title {
     margin-bottom: 37px;
   }
-
   .advantage__item {
     max-width: 48.5%;
     height: 305px;
   }
-
   .advantage__item--box {
     background-position: 89% 25px;
     margin: 0 16px 16px 0;
   }
-
   .advantage__item--camera {
     background-position: 89% 24px;
     margin: 0 0 0 0;
   }
-
   .advantage__item--diamond {
     background-position: 89% 25px;
     margin: 0 16px 0 0;
   }
-
   .advantage__item--car {
     background-position: 92% 18px;
     margin: 0 0 0 0;
   }
-
   .test {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -849,17 +827,14 @@ main {
     align-items: center;
     margin: 0;
   }
-
   .test1 {
     margin: -14px auto 0 0;
   }
-
   .ellipse {
     width: 502px;
     height: 502px;
     margin: 0 auto;
   }
-
   .ellipse__uppercase {
     width: 250px;
     font-weight: 600;
@@ -868,240 +843,191 @@ main {
     letter-spacing: -0.02em;
     text-align: center;
   }
-
   .percent {
     font-size: 124.5px;
     line-height: 90%;
     letter-spacing: -0.04em;
     margin-top: 15px;
   }
-
   .statistics {
     height: auto;
     margin-bottom: 60px
   }
-
   .statistics__contant {
     padding: 0;
   }
-
   .statistics__list {
     display: none;
   }
-
   .seller {
     background-image: none;
     margin-bottom: 70px;
   }
-
   .seller__title {
     max-width: 300px;
   }
-
   .seller__list {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-bottom: 35px;
   }
-
   .seller__item {
     width: 50%;
     padding: 64px 11px 8px 12px;
   }
-
   .seller__text {
     max-width: 140px;
   }
-
   .seller__button {
     margin: 0 0 15px 0;
   }
-
   .btn__seller {
     width: 100%;
   }
-
   .seller__link {
     display: block;
     width: 100%;
     text-align: center;
   }
-
   .faq__title {
     font-size: 50px;
     line-height: 55px;
     letter-spacing: -1.5px;
   }
-
-  .ui-accordion-content, .ui-accordion-content-active {
+  .ui-accordion-content,
+  .ui-accordion-content-active {
     padding-bottom: 20px;
   }
-
   .footer {
     padding-top: 30px;
   }
-
   .nav__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
-
   .footer__logo {
     margin-bottom: 40px;
   }
-
   .nav__item:not(:last-child) {
     margin: 0 0 25px;
   }
 }
 
-
-
 @media (max-width: 639px) {
   .content {
     padding: 0 16px;
   }
-
   .header {
     padding: 24px 16px 24px;
   }
-
   .advantage {
     padding-top: 94px;
     margin-bottom: 56px;
   }
-
   .advantage__title {
     margin-bottom: 30px;
     max-width: 280px;
   }
-
   .title__big {
     font-size: 25px;
     line-height: 33px;
     letter-spacing: -1px;
   }
-
   .advantage__item {
     max-width: 100%;
   }
-
-
   .advantage__item--box {
     background-position: 88% 25px;
     margin: 0 0 17px 0;
   }
-
   .advantage__item--camera {
     background-position: 90% 20px;
     margin: 0 0 17px 0;
   }
-
   .advantage__item--diamond {
     background-position: 90% 25px;
     margin: 0 0 17px 0;
   }
-
   .advantage__item--car {
     background-position: 90% 20px;
     margin: 0 0 0 0;
   }
-
   .statistics {
     margin-bottom: 73px;
   }
-
   .test1 {
     margin: 0 auto 0 0;
   }
-
   .ellipse {
     width: 320px;
     height: 320px;
     margin: 0 0 27px;
   }
-
   .percent {
     font-size: 88px;
     margin-top: 55px;
   }
-
   .statistics__title {
     margin-bottom: 23px;
   }
-
   .statistics__subtitle {
     max-width: 260px;
     font-size: 15px;
     line-height: 24px;
     letter-spacing: -0.5px;
   }
-
   .seller {
     margin-bottom: 80px;
   }
-
   .seller__title {
     max-width: 200px;
     margin-bottom: 23px;
   }
-
   .seller__subtitle {
     font-size: 15px;
     line-height: 24px;
     letter-spacing: -0.5px;
     margin-bottom: 24px;
   }
-
   .seller__list {
     margin-bottom: 25px;
   }
-
   .seller__item {
     padding: 64px 11px 10px 12px;
   }
-
   .seller__text {
     font-size: 12px;
     line-height: 17px;
     letter-spacing: -0.25px;
     margin-bottom: 9px;
   }
-
   .faq__title {
     font-size: 25px;
     line-height: 33px;
     letter-spacing: -1px;
     margin-bottom: 30px;
   }
-
   .ui-accordion-title {
     margin-right: 40px;
   }
-
-  .ui-accordion-content, .ui-accordion-content-active {
+  .ui-accordion-content,
+  .ui-accordion-content-active {
     padding-bottom: 24px;
   }
-
   .footer {
     padding: 30px 41px 24px;
   }
-
   .footer__subtitle {
     line-height: 20px;
     font-size: 15px;
     letter-spacing: -0.5px;
   }
-
   .folow__item--bot {
     margin: 0 0 17px 0;
   }
-
   .folow__item--inst {
     margin-bottom: 50px;
   }
-
-
 }
